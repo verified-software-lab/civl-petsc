@@ -1,1 +1,0 @@
-(error "Parse Error: <stdin>:1.14: Unexpected token: '('.")
