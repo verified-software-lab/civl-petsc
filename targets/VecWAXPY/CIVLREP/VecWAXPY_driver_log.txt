@@ -1,0 +1,962 @@
+Session name....... VecWAXPY_driver
+Directory.......... CIVLREP
+Date............... Thu May 22 21:02:06 EDT 2025
+numErrors.......... 1
+numDistinctErrors.. 1
+search truncated... true
+
+Violation 0[length=6818, file=CIVLREP/VecWAXPY_driver_0.trace]:
+[31mCIVL execution violation in p1 (property: DEREFERENCE, certainty: PROVEABLE)[0m at
+[34mw->data[i][0m
+[1mpetscvec.cvl:1002:4-13[0m | [34mw->data[i][0m
+
+Illegal pointer dereference:
+Pointer : <(scope_t(5)),0,ArrayElementRef(ArrayElementRef(TupleComponentRef(<1>,11),3),2)> 
+Referred variable : 
+ TUPLE (e34175)
+ | ARRAY (e10652)
+ | | ARRAY (e10651)
+ | | | TUPLE (e10650)
+ | | | | 1
+ | | | | ARRAY (e10269)
+ | | | | | TUPLE (e6076)
+ | | | | | | 1
+ | | | | ARRAY (e10244)
+ | | | | | false
+ | | | | 0
+ | ARRAY (e10832)
+ | | ARRAY (e10644)
+ | | | TUPLE (e10643)
+ | | | | 0
+ | | | | TUPLE (e10403)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10106)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10104)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e9885)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | TUPLE (e46)
+ | | | | | | | | | | | | 1
+ | | | | | | | | | | | 0
+ | | | | | | | | | 0
+ | | | | | | | 0
+ | | ARRAY (e10831)
+ | | | TUPLE (e10830)
+ | | | | 0
+ | | | | TUPLE (e10107)
+ | | | | | (scope_t(0))
+ | | | | | 0
+ | | | | | e10106
+ | ARRAY (e10532)
+ | | ARRAY (e10482)
+ | | | TUPLE (e10481)
+ | | | | 1
+ | | | | e10269
+ | | | | ARRAY (e10480)
+ | | | | | true
+ | | | | ARRAY (e10257)
+ | | | | | ARRAY (e10254)
+ | | | | | | TUPLE (e9896)
+ | | | | | | | 0
+ | | | | | | | ARRAY (e9894)
+ | | e10482
+ | ARRAY (e10756)
+ | | ARRAY (e10500)
+ | | | TUPLE (e10499)
+ | | | | 0
+ | | | | TUPLE (e10277)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e9879)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e9877)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e9875)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e46
+ | | | | | | | | | | | 2
+ | | | | | | | | | 0
+ | | | | | | | 0
+ | | ARRAY (e10549)
+ | | | TUPLE (e10548)
+ | | | | 0
+ | | | | TUPLE (e10323)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e9978)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e9976)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e9875
+ | | | | | | | | | 1
+ | | | | | | | 0
+ | | ARRAY (e10712)
+ | | | TUPLE (e10711)
+ | | | | 0
+ | | | | TUPLE (e9880)
+ | | | | | (scope_t(0))
+ | | | | | 0
+ | | | | | e9879
+ | | ARRAY (e10755)
+ | | | TUPLE (e10754)
+ | | | | 0
+ | | | | TUPLE (e9979)
+ | | | | | (scope_t(0))
+ | | | | | 0
+ | | | | | e9978
+ | ARRAY (e10600)
+ | | ARRAY (e10599)
+ | | | TUPLE (e10598)
+ | | | | 1
+ | | | | e10269
+ | | | | 0
+ | | | | ARRAY (e10073)
+ | | | | e10244
+ | ARRAY (e10793)
+ | | ARRAY (e10592)
+ | | | TUPLE (e10591)
+ | | | | 0
+ | | | | TUPLE (e10362)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10039)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10037)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e10035)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e46
+ | | | | | | | | | | | 4
+ | | | | | | | | | 0
+ | | | | | | | 0
+ | | ARRAY (e10792)
+ | | | TUPLE (e10791)
+ | | | | 0
+ | | | | TUPLE (e10040)
+ | | | | | (scope_t(0))
+ | | | | | 0
+ | | | | | e10039
+ | ARRAY (e6014)
+ | ARRAY (e28949)
+ | | ARRAY (e20792)
+ | | | TUPLE (e20791)
+ | | | | DENSE_TUPLE_WRITE (e11424)
+ | | | | | TUPLE_READ (e11329)
+ | | | | | | ARRAY_READ (e11226)
+ | | | | | | | Hp1s5f7o0 (e11213)
+ | | | | | | | 0
+ | | | | | | 0
+ | | | | | SEQ
+ | | | | | | 123
+ | | | | | | TUPLE (e9793)
+ | | | | | | | (scope_t(-1))
+ | | | | | | | -1
+ | | | | | | | e46
+ | | | | | | TUPLE (e11350)
+ | | | | | | | (scope_t(-1))
+ | | | | | | | 62
+ | | | | | | | APPLY (e10451)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e46
+ | | | | | | | | | 0
+ | | | | | | NULL (e31)
+ | | | | | | 0
+ | | | | | | TUPLE (e11393)
+ | | | | | | | (scope_t(5))
+ | | | | | | | 0
+ | | | | | | | APPLY (e11392)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e11390)
+ | | | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | APPLY (e10159)
+ | | | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | | | SEQ
+ | | | | | | | | | | | | | e46
+ | | | | | | | | | | | | | 9
+ | | | | | | | | | | | 0
+ | | | | | | | | | 0
+ | | | | | | TUPLE (e11418)
+ | | | | | | | (scope_t(5))
+ | | | | | | | 0
+ | | | | | | | APPLY (e11417)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e11415)
+ | | | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | APPLY (e10161)
+ | | | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | | | SEQ
+ | | | | | | | | | | | | | e46
+ | | | | | | | | | | | | | 10
+ | | | | | | | | | | | 0
+ | | | | | | | | | 0
+ | | | | ARRAY (e20790)
+ | | | | | DENSE_TUPLE_WRITE (e20789)
+ | | | | | | ARRAY_READ (e11739)
+ | | | | | | | TUPLE_READ (e11731)
+ | | | | | | | | e11226
+ | | | | | | | | 1
+ | | | | | | | 0
+ | | | | | | SEQ
+ | | | | | | | TUPLE (e20573)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 81
+ | | | | | | | TUPLE (e20581)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 74
+ | | | | | | | TUPLE (e20589)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 45
+ | | | | | | | TUPLE (e20597)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 54
+ | | | | | | | TUPLE (e20605)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 56
+ | | | | | | | TUPLE (e20613)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 46
+ | | | | | | | TUPLE (e11808)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 58
+ | | | | | | | TUPLE (e11844)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 43
+ | | | | | | | TUPLE (e11856)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 61
+ | | | | | | | TUPLE (e11868)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 64
+ | | | | | | | TUPLE (e11880)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 62
+ | | | | | | | TUPLE (e11892)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 63
+ | | | | | | | TUPLE (e11904)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 67
+ | | | | | | | TUPLE (e11916)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 77
+ | | | | | | | TUPLE (e20713)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 86
+ | | | | | | | TUPLE (e20729)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 90
+ | | | | | | | TUPLE (e20721)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 88
+ | | | | | | | TUPLE (e20691)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 48
+ | | | | | | | TUPLE (e11940)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 60
+ | | | | | | | TUPLE (e9794)
+ | | | | | | | | (scope_t(-1))
+ | | | | | | | | -1
+ | | | | | | | e31
+ | | | | | | | TUPLE (e11820)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 84
+ | | | | | | | TUPLE (e11832)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 82
+ | | | | | | | TUPLE (e11999)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 68
+ | | | | | | | TUPLE (e12011)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 69
+ | | | | | | | TUPLE (e20751)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 52
+ | | | | | | | TUPLE (e12035)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 70
+ | | | | | | | TUPLE (e12047)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 72
+ | | | | | | | TUPLE (e12059)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 71
+ | | | | | | | TUPLE (e20780)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 51
+ | | | | | | | TUPLE (e12083)
+ | | | | | | | | (scope_t(5))
+ | | | | | | | | 78
+ | | | | TUPLE (e10681)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10680)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10678)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e10193)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e46
+ | | | | | | | | | | | 26
+ | | | | | | | | | 1
+ | | | | | | | 0
+ | | | | TUPLE (e11711)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e11710)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e11708)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e10163)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e46
+ | | | | | | | | | | | 11
+ | | | | | | | | | 0
+ | | | | | | | 0
+ | | | | TUPLE (e11248)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e11247)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e11245)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e10157)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e46
+ | | | | | | | | | | | 8
+ | | | | | | | | | 0
+ | | | | | | | 0
+ | | | | 2
+ | | | | 2
+ | | | | 0
+ | | ARRAY (e24405)
+ | | | TUPLE (e24404)
+ | | | | DENSE_TUPLE_WRITE (e12321)
+ | | | | | TUPLE_READ (e12237)
+ | | | | | | ARRAY_READ (e12146)
+ | | | | | | | Hp1s5f7o1 (e12133)
+ | | | | | | | 0
+ | | | | | | 0
+ | | | | | SEQ
+ | | | | | | 123
+ | | | | | | e9793
+ | | | | | | e11350
+ | | | | | | e31
+ | | | | | | 0
+ | | | | | | TUPLE (e12293)
+ | | | | | | | (scope_t(5))
+ | | | | | | | 0
+ | | | | | | | APPLY (e12292)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e12290)
+ | | | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e10159
+ | | | | | | | | | | | 1
+ | | | | | | | | | 0
+ | | | | | | TUPLE (e12315)
+ | | | | | | | (scope_t(5))
+ | | | | | | | 0
+ | | | | | | | APPLY (e12314)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e12312)
+ | | | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e10161
+ | | | | | | | | | | | 1
+ | | | | | | | | | 0
+ | | | | ARRAY (e24403)
+ | | | | | DENSE_TUPLE_WRITE (e24402)
+ | | | | | | ARRAY_READ (e12494)
+ | | | | | | | TUPLE_READ (e12487)
+ | | | | | | | | e12146
+ | | | | | | | | 1
+ | | | | | | | 0
+ | | | | | | SEQ
+ | | | | | | | e20573
+ | | | | | | | e20581
+ | | | | | | | e20589
+ | | | | | | | e20597
+ | | | | | | | e20605
+ | | | | | | | e20613
+ | | | | | | | e11808
+ | | | | | | | e11844
+ | | | | | | | e11856
+ | | | | | | | e11868
+ | | | | | | | e11880
+ | | | | | | | e11892
+ | | | | | | | e11904
+ | | | | | | | e11916
+ | | | | | | | e20713
+ | | | | | | | e20729
+ | | | | | | | e20721
+ | | | | | | | e20691
+ | | | | | | | e11940
+ | | | | | | | e9794
+ | | | | | | | e31
+ | | | | | | | e11820
+ | | | | | | | e11832
+ | | | | | | | e11999
+ | | | | | | | e12011
+ | | | | | | | e20751
+ | | | | | | | e12035
+ | | | | | | | e12047
+ | | | | | | | e12059
+ | | | | | | | e20780
+ | | | | | | | e12083
+ | | | | e10681
+ | | | | TUPLE (e12467)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e12466)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e12464)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10163
+ | | | | | | | | | 1
+ | | | | | | | 0
+ | | | | TUPLE (e12161)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e12160)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e12158)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10157
+ | | | | | | | | | 1
+ | | | | | | | 0
+ | | | | 2
+ | | | | 2
+ | | | | 0
+ | | ARRAY (e26685)
+ | | | TUPLE (e26684)
+ | | | | DENSE_TUPLE_WRITE (e13018)
+ | | | | | TUPLE_READ (e12934)
+ | | | | | | ARRAY_READ (e12843)
+ | | | | | | | Hp1s5f7o2 (e12830)
+ | | | | | | | 0
+ | | | | | | 0
+ | | | | | SEQ
+ | | | | | | 123
+ | | | | | | e9793
+ | | | | | | e11350
+ | | | | | | e31
+ | | | | | | 0
+ | | | | | | TUPLE (e12990)
+ | | | | | | | (scope_t(5))
+ | | | | | | | 0
+ | | | | | | | APPLY (e12989)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e12987)
+ | | | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e10159
+ | | | | | | | | | | | 2
+ | | | | | | | | | 0
+ | | | | | | TUPLE (e13012)
+ | | | | | | | (scope_t(5))
+ | | | | | | | 0
+ | | | | | | | APPLY (e13011)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e13009)
+ | | | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e10161
+ | | | | | | | | | | | 2
+ | | | | | | | | | 0
+ | | | | ARRAY (e26683)
+ | | | | | DENSE_TUPLE_WRITE (e26682)
+ | | | | | | ARRAY_READ (e13191)
+ | | | | | | | TUPLE_READ (e13184)
+ | | | | | | | | e12843
+ | | | | | | | | 1
+ | | | | | | | 0
+ | | | | | | SEQ
+ | | | | | | | e20573
+ | | | | | | | e20581
+ | | | | | | | e20589
+ | | | | | | | e20597
+ | | | | | | | e20605
+ | | | | | | | e20613
+ | | | | | | | e11808
+ | | | | | | | e11844
+ | | | | | | | e11856
+ | | | | | | | e11868
+ | | | | | | | e11880
+ | | | | | | | e11892
+ | | | | | | | e11904
+ | | | | | | | e11916
+ | | | | | | | e20713
+ | | | | | | | e20729
+ | | | | | | | e20721
+ | | | | | | | e20691
+ | | | | | | | e11940
+ | | | | | | | e9794
+ | | | | | | | e31
+ | | | | | | | e11820
+ | | | | | | | e11832
+ | | | | | | | e11999
+ | | | | | | | e12011
+ | | | | | | | e20751
+ | | | | | | | e12035
+ | | | | | | | e12047
+ | | | | | | | e12059
+ | | | | | | | e20780
+ | | | | | | | e12083
+ | | | | e10681
+ | | | | TUPLE (e13164)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e13163)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e13161)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10163
+ | | | | | | | | | 2
+ | | | | | | | 0
+ | | | | TUPLE (e12858)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e12857)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e12855)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10157
+ | | | | | | | | | 2
+ | | | | | | | 0
+ | | | | 2
+ | | | | 2
+ | | | | 0
+ | | ARRAY (e28948)
+ | | | TUPLE (e28947)
+ | | | | DENSE_TUPLE_WRITE (e13716)
+ | | | | | TUPLE_READ (e13632)
+ | | | | | | ARRAY_READ (e13541)
+ | | | | | | | Hp1s5f7o3 (e13528)
+ | | | | | | | 0
+ | | | | | | 0
+ | | | | | SEQ
+ | | | | | | 123
+ | | | | | | e9793
+ | | | | | | e11350
+ | | | | | | e31
+ | | | | | | 0
+ | | | | | | TUPLE (e13688)
+ | | | | | | | (scope_t(5))
+ | | | | | | | 0
+ | | | | | | | APPLY (e13687)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e13685)
+ | | | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e10159
+ | | | | | | | | | | | 3
+ | | | | | | | | | 0
+ | | | | | | TUPLE (e13710)
+ | | | | | | | (scope_t(5))
+ | | | | | | | 0
+ | | | | | | | APPLY (e13709)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e13707)
+ | | | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e10161
+ | | | | | | | | | | | 3
+ | | | | | | | | | 0
+ | | | | ARRAY (e28946)
+ | | | | | DENSE_TUPLE_WRITE (e28945)
+ | | | | | | ARRAY_READ (e13889)
+ | | | | | | | TUPLE_READ (e13882)
+ | | | | | | | | e13541
+ | | | | | | | | 1
+ | | | | | | | 0
+ | | | | | | SEQ
+ | | | | | | | e20573
+ | | | | | | | e20581
+ | | | | | | | e20589
+ | | | | | | | e20597
+ | | | | | | | e20605
+ | | | | | | | e20613
+ | | | | | | | e11808
+ | | | | | | | e11844
+ | | | | | | | e11856
+ | | | | | | | e11868
+ | | | | | | | e11880
+ | | | | | | | e11892
+ | | | | | | | e11904
+ | | | | | | | e11916
+ | | | | | | | e20713
+ | | | | | | | e20729
+ | | | | | | | e20721
+ | | | | | | | e20691
+ | | | | | | | e11940
+ | | | | | | | e9794
+ | | | | | | | e31
+ | | | | | | | e11820
+ | | | | | | | e11832
+ | | | | | | | e11999
+ | | | | | | | e12011
+ | | | | | | | e20751
+ | | | | | | | e12035
+ | | | | | | | e12047
+ | | | | | | | e12059
+ | | | | | | | e20780
+ | | | | | | | e12083
+ | | | | e10681
+ | | | | TUPLE (e13862)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e13861)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e13859)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10163
+ | | | | | | | | | 3
+ | | | | | | | 0
+ | | | | TUPLE (e13556)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e13555)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e13553)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10157
+ | | | | | | | | | 3
+ | | | | | | | 0
+ | | | | 2
+ | | | | 2
+ | | | | 0
+ | ARRAY (e28670)
+ | | ARRAY (e20333)
+ | | | TUPLE (e20332)
+ | | | | 2
+ | | | | 3
+ | | | | 0
+ | | | | 2
+ | | | | -1
+ | | | | 2
+ | | e20333
+ | | e20333
+ | | e20333
+ | ARRAY (e13777)
+ | | ARRAY (e11493)
+ | | | -1
+ | | | -1
+ | | | -1
+ | | | -1
+ | | | -1
+ | | e11493
+ | | e11493
+ | | e11493
+ | ARRAY (e13783)
+ | | ARRAY (e11500)
+ | | | 0
+ | | | 0
+ | | | 0
+ | | | 0
+ | | | 0
+ | | e11500
+ | | e11500
+ | | e11500
+ | ARRAY (e34174)
+ | | ARRAY (e22715)
+ | | | TUPLE (e11018)
+ | | | | ARRAY_READ (e11016)
+ | | | | | X_X_Real (e11003)
+ | | | | | 0
+ | | | | ARRAY_READ (e11017)
+ | | | | | X_X_Imag (e11005)
+ | | | | | 0
+ | | | TUPLE (e11021)
+ | | | | ARRAY_READ (e11019)
+ | | | | | X_X_Real (e11003)
+ | | | | | 1
+ | | | | ARRAY_READ (e11020)
+ | | | | | X_X_Imag (e11005)
+ | | | | | 1
+ | | ARRAY (e25345)
+ | | | TUPLE (e11027)
+ | | | | ARRAY_READ (e11025)
+ | | | | | X_Y_Real (e11004)
+ | | | | | 0
+ | | | | ARRAY_READ (e11026)
+ | | | | | X_Y_Imag (e11006)
+ | | | | | 0
+ | | | TUPLE (e11030)
+ | | | | ARRAY_READ (e11028)
+ | | | | | X_Y_Real (e11004)
+ | | | | | 1
+ | | | | ARRAY_READ (e11029)
+ | | | | | X_Y_Imag (e11006)
+ | | | | | 1
+ | | ARRAY (e16152)
+ | | | TUPLE (e10874)
+ | | | | 0
+ | | | | 0
+ | | | e10874
+ | | ARRAY (e34173)
+ | | | TUPLE (e14760)
+ | | | | MULTIPLY (e14758)
+ | | | | | -1
+ | | | | | ADD (e14757)
+ | | | | | | MULTIPLY (e14746)
+ | | | | | | | e11017
+ | | | | | | | X_alpha_Imag (e9836)
+ | | | | | | MULTIPLY (e14748)
+ | | | | | | | -1
+ | | | | | | | MULTIPLY (e14745)
+ | | | | | | | | e11016
+ | | | | | | | | X_alpha_Real (e9830)
+ | | | | | | MULTIPLY (e14756)
+ | | | | | | | -1
+ | | | | | | | e11025
+ | | | | ADD (e14759)
+ | | | | | MULTIPLY (e14752)
+ | | | | | | e11017
+ | | | | | | X_alpha_Real (e9830)
+ | | | | | MULTIPLY (e14753)
+ | | | | | | e11016
+ | | | | | | X_alpha_Imag (e9836)
+ | | | | | e11026
+ | | | TUPLE (e14783)
+ | | | | MULTIPLY (e14781)
+ | | | | | -1
+ | | | | | ADD (e14780)
+ | | | | | | MULTIPLY (e14769)
+ | | | | | | | e11020
+ | | | | | | | X_alpha_Imag (e9836)
+ | | | | | | MULTIPLY (e14771)
+ | | | | | | | -1
+ | | | | | | | MULTIPLY (e14768)
+ | | | | | | | | e11019
+ | | | | | | | | X_alpha_Real (e9830)
+ | | | | | | MULTIPLY (e14779)
+ | | | | | | | -1
+ | | | | | | | e11028
+ | | | | ADD (e14782)
+ | | | | | MULTIPLY (e14775)
+ | | | | | | e11020
+ | | | | | | X_alpha_Real (e9830)
+ | | | | | MULTIPLY (e14776)
+ | | | | | | e11019
+ | | | | | | X_alpha_Imag (e9836)
+ | | | | | e11029
+ | ARRAY (e6024)
+ | ARRAY (e6020)
+ | e6020
+ | ARRAY (e6022)
+ | e6022
+ | e6024
+ | e6020
+ | e6020
+ | e6022
+ | e6022
+ | e6020
+ | e6020
+ | e6022
+ | ARRAY (e6026)
+ | ARRAY (e10852)
+ | | ARRAY (e10669)
+ | | | TUPLE (e10668)
+ | | | | TUPLE (e10469)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10468)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10466)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e10142)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e46
+ | | | | | | | | | | | 3
+ | | | | | | | | | 0
+ | | | | | | | 0
+ | | | | TUPLE (e10523)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10522)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10520)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10142
+ | | | | | | | | | 1
+ | | | | | | | 0
+ | | | | TUPLE (e10577)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10576)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10574)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e10151)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e46
+ | | | | | | | | | | | 5
+ | | | | | | | | | 0
+ | | | | | | | 0
+ | | | | TUPLE (e10629)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10628)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10626)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | APPLY (e9891)
+ | | | | | | | | | | TupleComponentRef (e40)
+ | | | | | | | | | | SEQ
+ | | | | | | | | | | | e46
+ | | | | | | | | | | | 1
+ | | | | | | | | | 0
+ | | | | | | | 0
+ | | | | 0
+ | | ARRAY (e10851)
+ | | | TUPLE (e10850)
+ | | | | TUPLE (e10692)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10691)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10689)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10142
+ | | | | | | | | | 2
+ | | | | | | | 0
+ | | | | TUPLE (e10735)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10734)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10732)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10142
+ | | | | | | | | | 3
+ | | | | | | | 0
+ | | | | TUPLE (e10777)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10776)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10774)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e10151
+ | | | | | | | | | 1
+ | | | | | | | 0
+ | | | | TUPLE (e10816)
+ | | | | | (scope_t(5))
+ | | | | | 0
+ | | | | | APPLY (e10815)
+ | | | | | | ArrayElementRef (e38)
+ | | | | | | SEQ
+ | | | | | | | APPLY (e10813)
+ | | | | | | | | ArrayElementRef (e38)
+ | | | | | | | | SEQ
+ | | | | | | | | | e9891
+ | | | | | | | | | 1
+ | | | | | | | 0
+ | | | | 0
+ | ARRAY (e6002)
+ | ARRAY (e6004)
+ | ARRAY (e6008) 
+Referred variable type : __heap__
+
+Input:
+  N_MIN=1
+  N_MAX=3
+  N=3
+  X_Real=X_X_Real
+  Y_Real=X_Y_Real
+  alpha_Real=X_alpha_Real
+  X_Imag=X_X_Imag
+  Y_Imag=X_Y_Imag
+  alpha_Imag=X_alpha_Imag
+  _mpi_nprocs=2
+  _mpi_nprocs_lo=1
+  _mpi_nprocs_hi=2
+Context:
+  forall _t : dynamicType . (0 <= CIVL_SIZEOF(_t) - 1)
+  0<=(SIZEOF_INT-1)
+  0<=(SIZEOF_REAL-1)
+  !((0==X_alpha_Real) ? (0==X_alpha_Imag) : false)
+Call stacks:
+process 0:
+  main@27 
+process 1:
+  VecWAXPY_Seq@901 [1mscalars.cvh:13:25[0m [34m$cadd[0m called from
+  VecWAXPY_spec@890 [1mpetscvec.cvl:1015:11[0m [34mVecWAXPY_Seq[0m called from
+  _civl_main@1355 [1mVecWAXPY_driver.cvl:47:2[0m [34mVecWAXPY_spec[0m called from
+  _mpi_process@231  called from
+  _par_proc0@1675 
+process 2:
+  $mpi_collective_send@1467 [1mcivl-mpi-blocking.cvl:322:2[0m [34mreturn[0m called from
+  $mpi_gatherv@1566 [1mcivl-mpi-blocking.cvl:486:4[0m [34m$mpi_collective_send[0m called from
+  MPI_Gatherv@281 [1mmpi.cvl:429:2[0m [34m$mpi_gatherv[0m called from
+  CIVL_PetscToCivlVec@1211 [1mpetscvec.cvl:1754:4[0m [34mMPI_Gatherv[0m called from
+  VecWAXPY_Seq@896 [1mpetscvec.cvl:999:13[0m [34mCIVL_PetscToCivlVec[0m called from
+  VecWAXPY_spec@890 [1mpetscvec.cvl:1015:11[0m [34mVecWAXPY_Seq[0m called from
+  _civl_main@1355 [1mVecWAXPY_driver.cvl:47:2[0m [34mVecWAXPY_spec[0m called from
+  _mpi_process@231  called from
+  _par_proc0@1675 
+
+
